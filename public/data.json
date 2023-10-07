@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Elegant Venue Package",
+    "image": "https://i.ibb.co/V2W7v4h/burncoose-house-1652711501.jpg",
+    "price": "$5,000",
+    "short_description": "A luxurious venue with seating for 200 guests."
+  },
+  {
+    "id": 2,
+    "name": "Floral Arrangement Service",
+    "image": "https://i.ibb.co/VNSVMHC/Adobe-Stock-191371230-1-1024x684.webp",
+    "price": "$1,500",
+    "short_description": "Exquisite floral arrangements to adorn your wedding venue."
+  },
+  {
+    "id": 3,
+    "name": "Catering Package",
+    "image": "https://i.ibb.co/Qnh4gXZ/The-7-Best-Indoor-Wedding-Ceremony-Venues-in-Sydney-1.jpg",
+    "price": "$4,000",
+    "short_description": "Delicious cuisine options for your wedding reception."
+  },
+  {
+    "id": 4,
+    "name": "Photography and Videography",
+    "image": "https://i.ibb.co/8sqJtf7/opt-aboutcom-coeus-resources-content-migration-brides-proteus-59bbe8d11a45f30f59daddfb-11-5b952bd067.webp",
+    "price": "$3,500",
+    "short_description": "Capture every moment with our professional services."
+  },
+  {
+    "id": 5,
+    "name": "Wedding Planning Service",
+    "image": "https://i.ibb.co/z4TCbN8/1501105761974-amportraits-35.webp",
+    "price": "$1,000",
+    "short_description": "Expert guidance and planning assistance for your dream wedding."
+  },
+  {
+    "id": 6,
+    "name": "Live Entertainment",
+    "image": "https://i.ibb.co/DRXsLfc/eea9b5a5-6400-44e1-bd70-5d1a83748b96-rs-768.webp",
+    "price": "$2,500",
+    "short_description": "Live music and entertainment to keep your guests dancing and more."
+  },
+  {
+    "id": 7,
+    "name": "Dining Experience",
+    "image": "https://i.ibb.co/MpScL0z/Tyme-173-600x450.jpg",
+    "price": "$3,000",
+    "short_description": "A gourmet dining experience with custom menus."
+  },
+  {
+    "id": 8,
+    "name": "Decor and Styling",
+    "image": "https://i.ibb.co/4pt5dt7/93ddc5c5-e090-432a-b781-90835b5aea3c-rs-768.webp",
+    "price": "$2,200",
+    "short_description": "Transform your venue with elegant decor and styling."
+  }
+]

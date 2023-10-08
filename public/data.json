@@ -4,55 +4,63 @@
     "name": "Elegant Venue Package",
     "image": "https://i.ibb.co/V2W7v4h/burncoose-house-1652711501.jpg",
     "price": "$5,000",
-    "short_description": "A luxurious venue with seating for 200 guests."
+    "short_description": "A Luxurious Venue With Seating For 500 Guests.",
+    "long_description": "The Elegant Venue Package offers a luxurious setting for your special day. With a capacity for 200 guests, this venue provides an elegant and spacious environment. Our attention to detail ensures that every aspect of your celebration is meticulously planned and executed. From the grand entrance to the stylish decor, your wedding will be an unforgettable experience."
   },
   {
     "id": 2,
     "name": "Floral Arrangement Service",
     "image": "https://i.ibb.co/VNSVMHC/Adobe-Stock-191371230-1-1024x684.webp",
     "price": "$1,500",
-    "short_description": "Exquisite floral arrangements to adorn your wedding venue."
+    "short_description": "Exquisite Floral Arrangements To Adorn Your Wedding Venue.",
+    "long_description": "Our Floral Arrangement Service adds a touch of beauty and elegance to your wedding venue. Our expert florists work with you to create exquisite floral arrangements that complement your wedding theme and style. From stunning centerpieces to delicate bouquets, our floral designs will enhance the atmosphere and create a romantic ambiance for your special day."
   },
   {
     "id": 3,
     "name": "Catering Package",
     "image": "https://i.ibb.co/Qnh4gXZ/The-7-Best-Indoor-Wedding-Ceremony-Venues-in-Sydney-1.jpg",
     "price": "$4,000",
-    "short_description": "Delicious cuisine options for your wedding reception."
+    "short_description": "Delicious Cuisine Options For Your Wedding Reception.",
+    "long_description": "Our Catering Package offers a delectable array of cuisine options for your wedding reception. From elegant plated dinners to elaborate buffet spreads, our culinary team creates a memorable dining experience for your guests. With a focus on quality ingredients and impeccable service, your wedding reception will be a gastronomic delight."
   },
   {
     "id": 4,
     "name": "Photography and Videography",
     "image": "https://i.ibb.co/8sqJtf7/opt-aboutcom-coeus-resources-content-migration-brides-proteus-59bbe8d11a45f30f59daddfb-11-5b952bd067.webp",
     "price": "$3,500",
-    "short_description": "Capture every moment with our professional services."
+    "short_description": "Capture Your Every Moment With Our Professional Services Here .",
+    "long_description": "Our Photography and Videography services are designed to capture every precious moment of your wedding day. Our team of experienced photographers and videographers use their artistic talents to document your day in a way that reflects your unique love story. From candid shots to beautifully edited videos, we ensure that you can relive your special day for years to come."
   },
   {
     "id": 5,
     "name": "Wedding Planning Service",
     "image": "https://i.ibb.co/z4TCbN8/1501105761974-amportraits-35.webp",
     "price": "$1,000",
-    "short_description": "Expert guidance and planning assistance for your dream wedding."
+    "short_description": "Expert Guidance And Planning Assistance For Your Dream Wedding.",
+    "long_description": "Our Wedding Planning Service provides expert guidance and planning assistance to bring your dream wedding to life. Our dedicated wedding planners work closely with you to create a customized wedding experience that reflects your style and vision. From venue selection to day-of coordination, we handle every detail so you can relax and enjoy your special day."
   },
   {
     "id": 6,
     "name": "Live Entertainment",
     "image": "https://i.ibb.co/DRXsLfc/eea9b5a5-6400-44e1-bd70-5d1a83748b96-rs-768.webp",
     "price": "$2,500",
-    "short_description": "Live music and entertainment to keep your guests dancing and more."
+    "short_description": "Live Music And Entertainment To Keep Your Guests Dancing And More.",
+    "long_description": "Our Live Entertainment services bring the party to life with live music and entertainment to keep your guests dancing and entertained throughout your wedding celebration. From live bands to DJs and other performers, we offer a range of options to suit your musical preferences and create a lively atmosphere that ensures your guests have a memorable time."
   },
   {
     "id": 7,
     "name": "Dining Experience",
     "image": "https://i.ibb.co/MpScL0z/Tyme-173-600x450.jpg",
     "price": "$3,000",
-    "short_description": "A gourmet dining experience with custom menus."
+    "short_description": "A Gourmet Dining Experience With Custom Menus.",
+    "long_description": "Our Dining Experience offers a gourmet dining experience with custom menus tailored to your tastes and preferences. From appetizers to desserts, our culinary team creates a gastronomic journey that delights the senses. Whether you prefer a formal plated dinner or a more casual dining style, we ensure that your guests savor every bite."
   },
   {
     "id": 8,
     "name": "Decor and Styling",
     "image": "https://i.ibb.co/4pt5dt7/93ddc5c5-e090-432a-b781-90835b5aea3c-rs-768.webp",
     "price": "$2,200",
-    "short_description": "Transform your venue with elegant decor and styling."
+    "short_description": "Transform Your Venue With Elegant Decor And Styling.",
+    "long_description": "Our Decor and Styling services transform your wedding venue with elegant decor and styling that reflects your unique style and theme. From floral arrangements to table settings, our creative team pays attention to every detail to create a visually stunning atmosphere. Your venue will be transformed into a beautiful and enchanting space that leaves a lasting impression."
   }
 ]

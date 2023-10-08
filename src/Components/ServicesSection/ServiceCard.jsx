@@ -1,13 +1,16 @@
-import React from 'react';
+import { Link } from "react-router-dom";
+
+
 
 const ServiceCard = ({ service }) => {
   // Destructure the service object
-  const { name, image, price, short_description } = service;
+  const {id, name, image, price, short_description } = service;
 
   return (
     <div >
      
-      <div className="relative mx-auto bg-white bg-opacity-20 bg-cover bg-center md:max-w-screen-lg h-full" data-aos="fade-up"
+     
+     <div className="relative mx-auto bg-white bg-opacity-20 bg-cover bg-center md:max-w-screen-lg h-full" data-aos="fade-up"
      data-aos-duration="3000">
       
         <img className="absolute h-full w-full object-cover" src={image} alt={name} />
@@ -16,10 +19,13 @@ const ServiceCard = ({ service }) => {
             <div>
               <h2 className="font-serif text-[25px] font-bold">{short_description}</h2>
             </div>
-            <button className="mt-6 inline-block rounded-xl border-2 px-10 py-3 font-semibold border-white hover:bg-white hover:text-red-200">Details</button>
+           <Link to={`/service/${id}`}>
+           <button className="mt-6 inline-block rounded-xl border-2 px-10 py-3 font-semibold border-white hover:bg-white hover:text-red-200">Details</button>
+           </Link>
           </div>
         </div>
       </div>
+    
     </div>
   );
 };

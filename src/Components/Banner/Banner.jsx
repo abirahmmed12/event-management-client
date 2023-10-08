@@ -24,7 +24,7 @@ const Banner = () => {
     return (
         <div  data-aos="fade-up"
         data-aos-duration="3000" style={{ position: 'relative' }}>
-            <img className='h-[700px] bg-cover'
+            <img className='lg:h-[700px] bg-cover'
                 src="https://i.ibb.co/hR3Nqg0/a78c9253-508d-493c-a7a8-6b2068e27f4b-sc-1016.webp"
                 alt=""
                 style={{ width: '100%' }}
@@ -39,10 +39,12 @@ const Banner = () => {
                     padding: '20px',
                     borderRadius: '5px',
                     textAlign: 'center',
+                    
+                    
                 }}
             >
-                <h1 style={{ fontSize: '52px ' }}>{typedText}</h1>
-                <p style={{ fontSize: '24px' }}>{additionalText}</p>
+                <h1 className='lg:text-6xl text-2xl' >{typedText}</h1>
+                
             </div>
         </div>
     );

@@ -1,7 +1,19 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+
+
+import { Link, NavLink } from 'react-router-dom';
+import { AuthContext } from '../../Aurhprovider/Authprovider';
+import { useContext } from 'react';
+
 
 const NavBar = () => {
+  const { user,logOut } = useContext(AuthContext)
+  const handleSignot = () => {
+    logOut()
+     .then()
+     .catch()
+  }
+ 
+  
   const Navlinks = (
     <>
       <li>
@@ -10,7 +22,7 @@ const NavBar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to={'/services'} className='italic text-lg text-gray-800 hover:text-blue-600'>
+        <NavLink to={'/servicecard'} className='italic text-lg text-gray-800 hover:text-blue-600'>
           Services
         </NavLink>
       </li>
@@ -29,12 +41,11 @@ const NavBar = () => {
           Registration
         </NavLink>
       </li>
-      
     </>
   );
 
   return (
-    <div className="navbar bg-base-100 p-5">
+    <div className="navbar p-5 shadow-2xl ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -70,9 +81,16 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1">{Navlinks}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-blue-600 text-white hover:bg-blue-800">
-          Button
-        </a>
+       {
+        user ? <button onClick={handleSignot} className="btn bg-blue-600 text-white hover:bg-blue-800">Log out</button> :  <Link to={'/login'}>
+        <button className="btn bg-blue-600 text-white hover:bg-blue-800">Login</button>
+        </Link>
+       }
+          
+          
+        
+        
+        
       </div>
     </div>
   );

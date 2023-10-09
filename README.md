@@ -141,3 +141,7 @@ So, there is only one truthy value (1) in the array, resulting in a count of 1.<
 4/Convenient Login Options: In addition to traditional login methods, users can access the platform with their preferred social media or third-party accounts.
 
 5/Personalized User Experience: Once logged in, users enjoy a personalized experience with their name, profile picture, and easy access to log out or explore private routes.
+
+
+Website name : DreamDayPlanners\
+livelink :

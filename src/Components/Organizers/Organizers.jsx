@@ -16,7 +16,7 @@ const OrganizerCard = ({ name, image }) => (
       </p>
     </div>
     <div className="md:flex justify-center gap-7  pt-2">
-      {/* Additional content for the card */}
+     
     </div>
   </div>
 );

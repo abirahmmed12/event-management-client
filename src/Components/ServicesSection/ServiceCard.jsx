@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const ServiceCard = ({ service }) => {
-  // Destructure the service object
+  
   const {id, name, image, price, short_description } = service;
 
   return (

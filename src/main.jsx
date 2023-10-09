@@ -14,6 +14,8 @@ import Services from './Pges/Services/Services';
 import NavBarService from './Pges/Services/NavBarService';
 import AuthProvider from './Aurhprovider/Authprovider';
 import PrivateRout from './PrivateRout/PrivateRout';
+import Gallery from './Pges/gallery/Gallery';
+import AboutUs from './Pges/AboutUs/AboutOus';
 
 
 const router = createBrowserRouter([
@@ -35,6 +37,11 @@ const router = createBrowserRouter([
         element: <PrivateRout><Services></Services></PrivateRout>,
         loader : ()=> fetch('/data.json')
       },
+      {
+        path: '/aboutus',
+        element: <PrivateRout><AboutUs></AboutUs></PrivateRout>,
+       
+      },
       { path : '/servicecard',
         element : <NavBarService></NavBarService>,
         loader : ()=> fetch('/data.json')
@@ -45,6 +52,10 @@ const router = createBrowserRouter([
         element: <Registration></Registration>,
        
       },
+      {
+        path : '/gallery',
+        element:<PrivateRout><Gallery></Gallery></PrivateRout>
+      }
 
     ]
   },

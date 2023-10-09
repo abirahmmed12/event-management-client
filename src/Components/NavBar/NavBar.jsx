@@ -1,19 +1,16 @@
-
-
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Aurhprovider/Authprovider';
 import { useContext } from 'react';
 
-
 const NavBar = () => {
-  const { user,logOut } = useContext(AuthContext)
-  const handleSignot = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleSignout = () => {
     logOut()
-     .then()
-     .catch()
-  }
- 
-  
+      .then()
+      .catch();
+  };
+
   const Navlinks = (
     <>
       <li>
@@ -26,21 +23,33 @@ const NavBar = () => {
           Services
         </NavLink>
       </li>
-      <li>
-        <NavLink to={'/gallery'} className='italic text-lg text-gray-800 hover:text-blue-600'>
-          Gallery
-        </NavLink>
-      </li>
+      {user && (
+        <li>
+          <NavLink to={'/gallery'} className='italic text-lg text-gray-800 hover:text-blue-600'>
+            Gallery
+          </NavLink>
+        </li>
+      )}
+      {user && (
+        <li>
+          <NavLink to={'aboutus'} className='italic text-lg text-gray-800 hover:text-blue-600'>
+            About Us
+          </NavLink>
+        </li>
+      )}
       <li>
         <NavLink to={'/login'} className='italic text-lg text-gray-800 hover:text-blue-600'>
           Login
         </NavLink>
       </li>
-      <li>
-        <NavLink to={'/registration'} className='italic text-lg text-gray-800 hover:text-blue-600'>
-          Registration
-        </NavLink>
-      </li>
+     
+        <li>
+          <NavLink to={'/registration'} className='italic text-lg text-gray-800 hover:text-blue-600'>
+            Registration
+          </NavLink>
+        </li>
+     
+
     </>
   );
 
@@ -81,16 +90,40 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1">{Navlinks}</ul>
       </div>
       <div className="navbar-end">
-       {
-        user ? <button onClick={handleSignot} className="btn bg-blue-600 text-white hover:bg-blue-800">Log out</button> :  <Link to={'/login'}>
-        <button className="btn bg-blue-600 text-white hover:bg-blue-800">Login</button>
-        </Link>
-       }
-          
-          
-        
-        
-        
+      {user ? (
+          <>
+            <div className="flex items-center gap-2 mr-4">
+              {user.photoURL ? (
+                <img
+                  src={user.photoURL}
+                  alt="User Icon"
+                  className="w-8 h-8 rounded-full"
+                />
+              ) : (
+                <img
+                  src="https://i.ibb.co/QmgzZ1N/Sample-User-Icon.png"
+                  alt="Default User Icon"
+                  className="w-8 h-8 rounded-full"
+                />
+              )}
+              <span className="text-sm mr-2 text-lg text-gray-800">
+                {user.displayName || user.email}
+              </span>
+            </div>
+            <button
+              onClick={handleSignout}
+              className="btn bg-[#e0a4a4] text-white hover:bg-blue-100"
+            >
+              Log out
+            </button>
+          </>
+        ) : (
+          <Link to={'/login'}>
+            <button className="btn bg-[#e0a4a4] text-white hover:bg-blue-100">
+              Login
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );

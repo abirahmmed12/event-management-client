@@ -7,21 +7,20 @@ const Services = () => {
 
   const idint = parseInt(id);
 
-  // Check if servicesdetail is not empty and find the service by id
+  
   const servicedetail = servicesdetail.find(service => service.id === idint);
 
   if (!servicedetail) {
     return <div>Service not found</div>;
   }
 
-  // Define a dynamic background image style
   const backgroundImageStyle = {
-    backgroundImage: `url(${servicedetail.image})`, // Use the service's image URL
+    backgroundImage: `url(${servicedetail.image})`, 
   };
 
   return (
-    <div className="max-w-screen-xl m-auto">
-      <div className="z-30 relative items-center justify-center w-full h-full overflow-auto">
+    <div data-aos="fade-right" className="max-w-screen-xl m-auto">
+      <div  className="z-30 relative items-center justify-center w-full h-full overflow-auto">
         <div className="inset-0 h-screen bg-cover bg-center" style={backgroundImageStyle}></div>
         <div className="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-black bg-opacity-75"></div>
         <div className="absolute inset-0  z-30  flex flex-col items-center justify-center">
@@ -29,7 +28,7 @@ const Services = () => {
             <div className="grid grid-cols-12 gap-1">
               <div className="relative my-6 px-8 col-span-12 sm:col-span-12 md:col-span-7 lg:col-span-7 xxl:col-span-7">
                 <div className="border-l-4 border-gray-200 py-20 px-5 mx-2 absolute left-0">
-                  <p className="italic text-white text-xl md:text-4xl lg:text-6xl uppercase text-center font-semibold">
+                  <p data-aos="zoom-in" className="italic text-white text-xl md:text-4xl lg:text-6xl uppercase text-center font-semibold">
                     {servicedetail.name}
                   </p>
                 </div>
@@ -37,7 +36,7 @@ const Services = () => {
                 <div className="absolute border-gray-200 border-t-4 bottom-0 py-1 px-4 w-4/5"></div>
               </div>
               <div className="col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-5 xxl:col-span-5">
-                <div className="relative bg-[#e0a4a4] h-full md:h-96 w-full bg-opacity-90 rounded-tr-lg rounded-br-lg">
+                <div  data-aos="fade-up-left" className="relative bg-[#e0a4a4] h-full md:h-96 w-full bg-opacity-90 rounded-tr-lg rounded-br-lg">
                   <div className="p-8">
                     <p className="text-white text-xs md:text-sm lg:text-xl mb-4">
                       {servicedetail.long_description}

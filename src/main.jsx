@@ -16,12 +16,14 @@ import AuthProvider from './Aurhprovider/Authprovider';
 import PrivateRout from './PrivateRout/PrivateRout';
 import Gallery from './Pges/gallery/Gallery';
 import AboutUs from './Pges/AboutUs/AboutOus';
+import ErrorPage from './Errorpage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',

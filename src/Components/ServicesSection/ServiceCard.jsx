@@ -15,7 +15,7 @@ const ServiceCard = ({ service }) => {
       
         <img className="absolute h-full w-full object-cover" src={image} alt={name} />
         <div className="text-white lg:w-1/2">
-          <div className="bg-[#e0a4a4] md:w-auto w-52 bg-opacity-95 p-5 opacity-90 md:backdrop-blur-lg  lg:p-12 h-full flex flex-col justify-between">
+          <div className="bg-[#e0a4a4] lg:w-auto w-52 bg-opacity-95 p-5 opacity-90 md:backdrop-blur-lg  lg:p-12 h-full flex flex-col justify-between">
             <div>
               <h2 className="font-serif text-[25px] font-bold">{short_description}</h2>
             </div>

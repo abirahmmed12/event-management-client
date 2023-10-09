@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Aurhprovider/Authprovider';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import Swal from 'sweetalert2';
 
 const Registration = () => {
     const { createuser } = useContext(AuthContext);
@@ -43,7 +44,8 @@ const Registration = () => {
         signInWithPopup(auth, provider)
             .then((result) => {
                 console.log("Google sign-in successful", result);
-                navigate('/'); 
+                navigate('/');
+                Swal.fire('Succesfully Register!') 
             })
             .catch((error) => {
                 console.error("Google sign-in error", error);
@@ -54,7 +56,7 @@ const Registration = () => {
         <div className='mt-10'>
             <div className="w-full max-w-sm p-6 m-auto mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
                 <div className=" flex justify-center mx-auto">
-                    <img className="w-auto h-7 sm:h-8" src="https://merakiui.com/images/logo.svg" alt="" />
+                    
                 </div>
                 <form onSubmit={handleRegister} className="mt-6">
                     <div>

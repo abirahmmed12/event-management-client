@@ -3,7 +3,7 @@ import React from 'react';
 const OrganizerCard = ({ name, image }) => (
   <div data-aos="fade-right"
   data-aos-offset="300"
-  data-aos-easing="ease-in-sine" className="relative  md:flex w-80 p-5 md:mr-10 md:ml-0    ml-12 md:flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+  data-aos-easing="ease-in-sine" className="relative   lg:flex w-80 p-5 md:mr-10 md:ml-0    ml-12 lg:flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
     <div className="relative mx-4 mt-4 h-48 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
       <img src={image} alt="profile-picture" />
     </div>
@@ -15,7 +15,7 @@ const OrganizerCard = ({ name, image }) => (
         CEO / Co-Founder
       </p>
     </div>
-    <div className="md:flex justify-center gap-7  pt-2">
+    <div className="lg:flex justify-center gap-7  pt-2">
      
     </div>
   </div>
@@ -44,7 +44,7 @@ const Organizers = () => {
   return (
     <div className="bg-blue-100 py-6">
       <div className="container mx-auto">
-        <div className="md:flex justify-center items-center gap-7">
+        <div className="lg:flex justify-center items-center gap-7">
           <div>
             <h1 className="text-4xl font-bold text-center mb-5">Meet Our Creative Event Organizers</h1>
             <h1 className="md:text-xl md:p-0 p-6  font-bold text-center" > Our dedicated team of creative minds and event enthusiasts <br /> is here to make your events truly exceptional . <br /> Get to know the faces behind the magic and passion <br /> that bring your ideas to life.</h1>

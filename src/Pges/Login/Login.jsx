@@ -1,6 +1,7 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Aurhprovider/Authprovider';
+import Swal from 'sweetalert2';
 
 const Login = () => {
     const { logIn } = useContext(AuthContext);
@@ -8,6 +9,16 @@ const Login = () => {
     const [loginError, setLoginError] = useState(null);
     const location = useLocation();
     const Navigate = useNavigate();
+
+    useEffect(() => {
+        if (loginSuccess) {
+            const timer = setTimeout(() => {
+                setLoginSuccess(false);
+                Navigate(location?.state ? location.state : '/');
+            }, 3000); 
+            return () => clearTimeout(timer);
+        }
+    }, [loginSuccess, location, Navigate]);
 
     const handleLogin = e => {
         e.preventDefault();
@@ -19,8 +30,8 @@ const Login = () => {
                 console.log(result.user);
                 setLoginSuccess(true);
                 setLoginError(null);
-                Navigate(location?.state ? location.state : '/');
-                e.target.reset()
+                e.target.reset();
+                Swal.fire('Succesfully Login!')
             })
             .catch(error => {
                 console.error(error);
@@ -53,7 +64,6 @@ const Login = () => {
                             id="email"
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                             placeholder="name@company.com"
-                            
                         />
                     </div>
                     <div>
@@ -65,7 +75,6 @@ const Login = () => {
                             placeholder="••••••••"
                             required
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                            
                         />
                     </div>
                     <div className="flex items-start">

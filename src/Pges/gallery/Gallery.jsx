@@ -24,7 +24,7 @@ const Gallery = () => {
   return (
     <div>
       
-      <section className="max-w-screen-xl m-auto py-16 bg-gray-100">
+      <section className=" max-w-screen-xl m-auto py-16 bg-gray-100">
         <div className="container mx-auto text-center">
           <h2 className="text-5xl font-semibold text-gray-800">
             Our Beautiful Memories
@@ -38,7 +38,7 @@ const Gallery = () => {
         </div>
       </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="p-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {galleryImages.map((image, index) => (
           <div
             key={index}
